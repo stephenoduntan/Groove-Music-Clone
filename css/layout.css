@@ -1,0 +1,36 @@
+html{
+    height: 100vh;
+}
+body{
+    background: #050505;
+    display: grid;
+    grid-template-rows: 87% 13%;
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    margin: 0px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+}
+
+a{
+    text-decoration: none;
+}
+
+input,
+button,
+a,
+audio{
+    outline: none;
+    background: initial;
+    border: initial;
+    cursor: pointer;
+}
+
+.main-wrapper{
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: min-content 1fr;
+    grid-template-rows: min-content 1fr;
+    overflow: hidden;
+}

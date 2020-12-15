@@ -1,0 +1,186 @@
+.page-wrapper{
+    display: grid;
+    grid-auto-rows: min-content;
+    padding: 0px 25px 15px;
+}
+
+.page-wrapper a{
+    color: #089ED6;
+}
+
+.page-wrapper h1,h2,h3,h4,h5,h6{
+    font-weight: 400;
+    margin-bottom: 5px;
+}
+
+.page-wrapper h1{
+    font-weight: 300;
+    font-size: xx-large;
+}
+.page-nav,
+.page-info{
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: max-content;
+    grid-gap: 40px;
+    border-bottom: 0.5px solid rgba(255, 255, 255, 0.514);
+}
+.page-nav--item{
+    color: rgba(255, 255, 255, 0.452);
+    cursor: pointer;
+}
+.page-nav--item:active,
+.page-nav--item:focus,
+.page-nav--item:focus-within{
+    outline: none;
+    color: white;
+    border-bottom: 3px solid #089ED6;
+}
+.active{
+    color: white;
+    border-bottom: 3px solid #089ED6;
+}
+
+.page-nav--item:hover{
+    color: white;
+    transition: ease-in-out 0.2s;
+}
+.page-info{
+    padding: 20px 0px 15px;
+    cursor: pointer;
+}
+#shuffle{
+    display: grid;
+    grid-auto-flow: column;
+    grid-gap: 10px;
+}
+#shuffle:hover,
+.page-info--nav:hover svg,
+.page-info--name:hover a,
+.page-help:hover a{
+    opacity: 0.696;
+    transition: ease-in-out 0.2s;
+}
+
+.page-help{
+    display: grid;
+    grid-template-columns: 90% 10%;
+    padding: 15px 0px;
+}
+.feather-file{
+    transform: rotate(180deg) rotateY(180deg);
+}
+.page-help--question{
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    grid-auto-columns: max-content;
+    grid-column-gap: 8px;
+}
+.page-help--ask{
+    grid-column-start: 2;
+}
+.page-help--show{
+    grid-row-start: 2;
+    grid-column-start: 2;
+}
+.page-help--close{
+    justify-self: end;
+}
+
+.page-music--block{
+    display: grid;
+    grid-auto-rows: max-content;
+    padding: 0px 25px;
+    overflow-y: scroll;
+    font-size: small;
+    font-weight: 300;
+}
+.page-music--block::-webkit-scrollbar{
+    display: block;
+    width: 3px;
+    height: 5px;
+    background: none;
+}
+.page-music--block::-webkit-scrollbar-thumb{
+    border-radius: 20%;
+    background: grey;
+}
+.music-item{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 10px;
+    justify-items: center;
+    position: relative;
+    padding: 15px 0px;
+    overflow: hidden;
+}
+.music-item .music-title{
+    position: relative;
+    width: 100%;
+    text-align: center;
+}
+.music-option{
+    display: none;
+}
+.music-item:hover .music-title .music-option{
+    display: grid;
+    grid-template-columns: min-content 40% 44% 1fr min-content min-content;
+    grid-gap: 5px;
+    align-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    padding: 0px 8px;
+}
+#play_music{
+    grid-column: 5;
+}
+#play_music svg{
+    width: 20px !important;
+    padding: 0px 2px;
+}
+#add_music{
+    grid-column: 6;
+}
+#add_music svg{
+    width: 25px !important;
+    opacity: 0.780;
+    padding: 8px 1px;
+}
+#add_music,
+#play_music{
+    background: inherit;
+}
+#add_music:hover,
+#play_music:hover{
+    background: #d8d8d87e;
+}
+.music-option .checkbox{
+    position: relative;
+}
+.music-option .checkbox input[type="checkbox"]{
+    opacity: 0;
+}
+.music-option .checkbox .checked{
+    width: 19px;
+    height: 17px;
+    background: none;
+    border: 1px solid whitesmoke;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+}
+.music-option .checkbox:hover .checked{
+    border-color: rgba(245, 245, 245, 0.705);
+    transition: ease-in-out 0.2s;
+}
+
+.music-item:hover,
+.music-item:nth-child(odd):hover{
+    background: rgb(48, 42, 42);
+}
+.music-item:nth-child(odd){
+    background: rgb(34, 30, 30);
+}

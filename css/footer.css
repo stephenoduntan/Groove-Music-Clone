@@ -1,0 +1,102 @@
+.footer-wrapper{
+    display: grid;
+    grid-template-columns: 30% 1fr 20%;
+    background: rgba(184, 127, 42, 0.963);
+    box-shadow: 0px 3px 20px inset #231e1eda;
+}
+.music-overview{
+    display: grid;
+    height: 100%;
+    margin: 0px 10px;
+    grid-template-columns: repeat(2, min-content);
+    grid-template-rows: repeat(2, 1fr);
+}
+.music-cover--pics{
+    grid-row: 2;
+}
+.music-overview:hover{
+    background: rgba(70, 68, 68, 0.438);
+}
+.music-play--bar{
+    display: grid;
+}
+.music-play--nav{
+    width: 80%;
+    display: grid;
+    padding-top: 5px;
+}
+.music-nav--icon{
+    align-self: start;
+    align-items: center;
+    min-width: 50%;
+    display: grid;
+    grid-auto-flow: column;
+    justify-items: center;
+    margin: 0px auto;
+}
+.music-progress{
+    display: grid;
+    grid-template-columns: min-content 1fr min-content;
+    grid-gap: 5px;
+}
+.music-progress--bar{
+    position: relative;
+}
+.progress-slider{
+    appearance: none;
+    height: 3px;
+    width: 100%;
+    margin-bottom: 9px;
+    padding-left: 15px;
+}
+::-webkit-progress-bar{
+    background: rgba(255, 255, 255, 0.448);
+}
+.progress-thumb{
+    position: absolute;
+    left: 0;
+}
+.music-nav--icon .music-control--icon svg{
+    width: 25px;
+}
+.feather-play,
+.feather-pause{
+    width: 35px !important;
+    height: 40px !important;
+    place-self: center;
+}
+.feather-rotate-ccw{
+    transform: rotateY(160deg) rotate(115deg);
+}
+
+.music-audio--controls{
+    display: grid;
+    grid-template-columns: min-content 1fr;
+    align-items: center;
+}
+.volume-bar{
+    height: 5px;
+    width: 50%;
+    margin-bottom: 15px;
+}
+/* .music-volume-bar{
+    background-image: linear-gradient(rgba(255, 255, 255, 0.448), rgba(255, 255, 255, 0.448));
+    background-repeat: no-repeat;
+    background-size: 75% 1.5px;
+    background-position: 40% 10px;
+} */
+.music-control--icon{
+    padding: 10px;
+}
+.music-control--icon:hover{
+    background: rgba(255, 255, 255, 0.100);
+    border-radius: 100%;
+    border: 1px solid rgba(255, 255, 255, 0.425);
+}
+
+#play, #pause{
+    display: grid;
+    padding: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.525);
+    border-radius: 100%;
+}
