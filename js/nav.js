@@ -69,28 +69,17 @@ searchBtnPod.onclick = function(){
     searchBarPod.style.display ='grid';
 }
 
-//for(i=0; i<sideNavItem.length; i++){
-    //const active = document.querySelector('.selected');
-    
-    // sideNavItem.forEach(element => element.onclick = function(){
-    //         if(element.classList.contains('selected')){
-    //             element.classList.remove('selected');
-    //             //this.classList.add('selected')
-    //         }else{
-    //           element.classList.add('selected');
-    //         }
-    //     }
-    // )
-    // const activeLink = sideNavItem[i];
-    // activeLink.onclick = function(){
-    //     activeLink.style.borderLeft = '4px solid #089ED6';
-    // }
-    // sideNavItem[i].onclick = function(e){
-    //     sideNavItem[i].style.borderLeft = 'none';
-    //     e.target.style.borderLeft = '4px solid #089ED6';
-    // }
-//}
+for(i=0; i<sideNavItem.length; i++){
+    let selected = sideNavItem[i];
+    selected.onclick = function(){
+        selected.classList.add('selected');
 
+        if(selected.classList.contains('selected')){
+            selected.classList.remove('selected');
+            //this.classList.add('selected')
+        }
+    }
+}
 document.body.onclick = function(){
     cancelBtnIcon[0].style.visibility = 'hidden';
     cancelBtnIcon[1].style.visibility = 'hidden';

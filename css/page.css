@@ -4,10 +4,6 @@
     padding: 0px 25px 15px;
 }
 
-.page-wrapper a{
-    color: #089ED6;
-}
-
 .page-wrapper h1,h2,h3,h4,h5,h6{
     font-weight: 400;
     margin-bottom: 5px;
@@ -48,6 +44,11 @@
 .page-info{
     padding: 20px 0px 15px;
     cursor: pointer;
+}
+.page-info a,
+.page-help a,
+.page-info-600 a{
+    color: #089ED6;
 }
 #shuffle{
     display: grid;
